@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: YOUR-USERNAME/tech-news-site
+  name: git-gateway
+  branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -10,7 +10,7 @@ collections:
     label: "News"
     folder: "news"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
